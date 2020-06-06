@@ -27,3 +27,9 @@
     src: url(../fonts/OpenSans-ExtraBold.ttf);
     font-weight: 800;
 }
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../fonts/PTSerif-Bold.ttf);
+    font-weight: 400;
+}
