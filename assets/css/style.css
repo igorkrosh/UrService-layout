@@ -436,3 +436,82 @@ input:focus, button:focus
     padding: 75px 0;
     text-align: center;
 }
+
+.our-practice
+{
+    position: relative;
+}
+
+.our-practice:after
+{
+    content: "";
+    position: absolute;
+    width: 54%;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    border-top: 60px solid #ffdd00;
+    border-left: 60px solid #ffdd00;
+    z-index: -1;
+}
+
+.practice-slider
+{
+    margin-top: 75px;
+}
+
+.practice-slider h2
+{
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.practice-slider h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.practice-slider p
+{
+    font-family: PTSerif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.practice-slider .btn-blue
+{
+    margin-top: 50px;
+}
+
+.practice-slider img
+{
+    width: 100%;
+    height: auto;
+}
+
+.practice-slider .carousel-nav .owl-dot
+{
+    opacity: 1;
+    background-color: #000000;
+}
+
+.practice-slider .carousel-nav .carousel-nav-arrows button
+{
+    padding: 0;
+}
+
+.practice-slider .carousel-nav .carousel-nav-arrows button img
+{
+    height: 100%;
+    width: auto;
+}
+
+.practice-slider .carousel-nav 
+{
+    bottom: 10%;
+    position: relative;
+    margin-top: 30px;
+}

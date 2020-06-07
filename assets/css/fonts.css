@@ -33,3 +33,9 @@
     src: url(../fonts/PTSerif-Bold.ttf);
     font-weight: 400;
 }
+
+@font-face {
+    font-family: PTSerif;
+    src: url(../fonts/PTSerif-Regular.ttf);
+    font-weight: 300;
+}
