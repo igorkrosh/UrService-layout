@@ -377,7 +377,7 @@ input:focus, button:focus
 
 .specialization-item:hover .item-number:after
 {
-    opacity: 0;
+    height: 0;
 }
 
 .specialization-item:hover .item-number
@@ -515,3 +515,75 @@ input:focus, button:focus
     position: relative;
     margin-top: 30px;
 }
+
+.reviews
+{
+    padding: 95px 0;
+    background: url(../images/reviews-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.reviews .title
+{
+    color: #ffffff;
+}
+
+.review-item
+{
+    background: rgba(0, 0, 0, 0.7);
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.review-image img
+{
+    margin-top: -20px;
+}
+
+.review-image
+{
+    display: inline-block;
+}
+
+.review-info
+{
+    display: inline-block;
+    padding-left: 25px;
+    padding-top: 55px;
+}
+
+.review-item .review-name
+{
+    display: block;
+    font-family: Intro;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.review-item .review-company
+{
+    display: block;
+    font-family: Intro;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.review-header
+{
+    display: flex;
+}
+
+.review-item .review-content
+{
+    margin-top: 35px;
+    font-family: Intro;
+    font-size: 16px;
+}
+
+

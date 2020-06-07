@@ -35,6 +35,17 @@ $(document).ready(function(){
         mouseDrag: false
     });
 
+    $('.reviews .owl-carousel').owlCarousel({
+        items: 2,
+        margin: 35,
+        dots: true,
+        nav: true,
+        dotsContainer: '.reviews .carousel-nav-dots',
+        navContainer: '.reviews .carousel-nav-arrows',
+        navText:["<img src='assets/images/icons/slider-arrow.png'>","<img src='assets/images/icons/slider-arrow.png'>"],
+        slideBy: 2,
+    })
+
 
   });
 
