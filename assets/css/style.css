@@ -586,4 +586,226 @@ input:focus, button:focus
     font-size: 16px;
 }
 
+.press-center img
+{
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    /*border: 7px solid #ffffff;*/
+    z-index: -1;
+}
+
+.press-center-wrapper
+{
+    display: flex;
+
+    height: 430px;
+}
+
+.press-center-item.big
+{
+    width: 50%;
+    height: 100%;
+}
+
+.press-center-item.large
+{
+    width: 100%;
+    height: 50%;
+}
+
+.press-center-item.sm
+{
+    width: 50%;
+    height: 50%;
+}
+
+.press-center-item-right-side
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.press-center-item
+{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s;
+}
+
+.press-center
+{
+    padding: 90px 0;
+}
+
+.press-center .title
+{
+    margin-bottom: 50px;
+}
+
+.press-center-item.tag-actual:after
+{
+    content: "Актуально";
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 15px;
+    background-color: #616bf3;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: 0.5s;
+}
+
+.press-center-item.tag-our:after
+{
+    content: "Наша процесс";
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 15px;
+    background-color: #616bf3;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: 0.5s;
+}
+
+.press-center-item.tag-live:before
+{
+    content: url(../images/icons/live.jpg);
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.press-center-item-description
+{
+    font-family: PTSerif;
+    color: #ffffff;
+    position: relative;
+    transition: 0.5s;
+    /*position: absolute;
+    bottom: 10px;
+    left: 10px;*/
+    transition: 0.5s;
+    /*width: 100%;*/
+    height: 100%;
+    width: 100%;
+}
+
+.press-center-item-description h2
+{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.press-center-item-description p
+{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
+
+.press-center-item-description a
+{
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 14px;
+    color: #616bf3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+
+.press-center-item-description a::before
+{
+    content: url(../images/icons/arrow-blue.png);
+    position: absolute;
+    right: 0;
+}
+
+.press-center-item.big:hover .press-center-item-description-text
+{
+    left: 50%;
+    bottom: 55%;
+    transform: translate(-50%, 50%);    
+    width: 100%;
+}
+
+.press-center-item.large:hover .press-center-item-description-text
+{
+    left: 50%;
+    bottom: 55%;
+    transform: translate(-50%, 50%);    
+    width: 100%;
+}
+
+.press-center-item.sm:hover .press-center-item-description-text
+{
+    left: 50%;
+    bottom: 60%;
+    transform: translate(-50%, 50%);    
+    width: 100%;
+}
+
+.press-center-item.sm .press-center-item-description-text
+{
+    padding: 15px;
+}
+
+.press-center-item:hover.tag-live:before, .press-center-item:hover.tag-our:after, .press-center-item:hover.tag-actual:after
+{
+    opacity: 0;
+}
+
+.press-center-item-description:after
+{
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    top: 0;
+    left: 0;
+}
+
+.press-center-item:hover .press-center-item-description:after
+{    
+    opacity: 0.8;
+}
+
+.press-center-item:hover .press-center-item-description a
+{
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.press-center-item-description-text
+{
+    position: absolute;
+    z-index: 5;
+    padding: 25px 35px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+    width: 100%;
+}
+
 
