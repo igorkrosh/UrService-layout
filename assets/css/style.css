@@ -858,3 +858,51 @@ input:focus, button:focus
     color: #a9a9a9;
 }
 
+.consultation
+{
+    padding: 100px 0;
+    background: url(../images/consultation-bg.jpg);
+    background-size: cover;
+}
+
+.consultation .title
+{
+    color: #ffffff;
+}
+
+.consultation .form-wrapper
+{
+    width: 375px;
+    margin: 50px auto 0 auto;
+}
+
+.form-group 
+{
+    text-align: left;
+}
+
+.consultation-form
+{
+    text-align: center;
+}
+
+.consultation-form label
+{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.consultation-form input
+{
+    padding: 25px 20px;
+    border-radius: 0;
+    background-color: #b4b4b4;
+    border: none;
+    transition: 0.5s;
+}
+
+.consultation-form .btn-blue
+{
+    margin-top: 40px;
+}
