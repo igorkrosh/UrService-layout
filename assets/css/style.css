@@ -134,6 +134,10 @@ input:focus, button:focus
 {
     background-color: #1d1d1d;
     color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
 .navbar .container
@@ -200,6 +204,7 @@ input:focus, button:focus
 .carousel
 {
     position: relative;
+    margin-top: 70px;
 }
 
 .carousel-item-wrapper
@@ -1008,4 +1013,122 @@ footer .social .social-links
 footer .border-line
 {
     border-bottom: 1px solid #353535;
+}
+
+.modal .modal-content
+{
+    border-radius: 0;
+    border: none;
+}
+
+.modal .modal-header
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+.modal .modal-dialog
+{
+    max-width: 575px;
+}
+
+.modal .form-wrapper
+{
+    width: 375px;
+    margin: 25px auto;
+}
+
+.modal .form-wrapper label
+{
+    color: #000000;
+}
+
+.modal .form-wrapper input
+{
+    background-color: #f3f3f3;
+}
+
+.modal .form-wrapper .btn-blue
+{
+    margin-top: 20px;
+}
+
+.modal .politics
+{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+.modal .politics a
+{
+    color: #616bf3;
+}
+
+.menu-wrapper
+{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 105;
+    background-color: rgba(97, 107, 243, 0.8);
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.menu-wrapper.active
+{
+    right: 0;
+}
+
+.menu-wrapper .menu
+{
+    list-style: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu-wrapper .menu li
+{
+    margin-bottom: 20px;
+}
+
+.btn-close
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background: none;
+}
+
+.btn-close:after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.btn-close:before
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg) ;
 }

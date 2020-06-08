@@ -2,8 +2,14 @@ let practiceSliderImages = $('.practice-slider .practice-images .owl-carousel');
 let practiceSliderDescription = $('.practice-slider .practice-description .owl-carousel');
 
 $(document).ready(function(){
+    
+    SetOwlCarousel();
+    SetNavbarMenu();
+});
 
 
+function SetOwlCarousel() 
+{
     $(".carousel .owl-carousel").owlCarousel({
         items: 1,
         dots: true,
@@ -25,7 +31,7 @@ $(document).ready(function(){
         dotsContainer: '.practice-slider .carousel-nav-dots',
         navContainer: '.practice-slider .carousel-nav-arrows',
         navText:["<img src='assets/images/icons/slider-arrow-dark.png'>","<img src='assets/images/icons/slider-arrow-dark.png'>"],
-    }).on('changed.owl.carousel', syncPosition);
+    }).on('changed.owl.carousel', SyncPosition);
 
     $('.practice-slider .practice-description .owl-carousel').owlCarousel({
         items: 1,
@@ -45,12 +51,19 @@ $(document).ready(function(){
         navText:["<img src='assets/images/icons/slider-arrow.png'>","<img src='assets/images/icons/slider-arrow.png'>"],
         slideBy: 2,
     })
+}
 
-
-  });
-
-  function syncPosition(callback)
-  {
-    console.log(callback.item.index)
+function SyncPosition(callback)
+{
     practiceSliderDescription.trigger('to.owl.carousel', [callback.item.index, 500, true]);
-  }
+}
+
+function SetNavbarMenu() 
+{
+    $('.btn-menu').on('click', function() {
+        $('.menu-wrapper').addClass('active')
+    })
+    $('.btn-close').on('click', function() {
+        $('.menu-wrapper').removeClass('active')
+    })
+}

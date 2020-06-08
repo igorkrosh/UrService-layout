@@ -23,10 +23,21 @@
                 <div class="search-form">
                     <input type="text" placeholder="Поиск">
                 </div>
-                <button class="btn-blue sm">Мы на связи</button>
+                <button class="btn-blue sm" data-toggle="modal" data-target="#consultationModal">Мы на связи</button>
                 <button class="btn-menu"><span></span></button>
             </div>
         </nav>
+        <div class="menu-wrapper">
+            <button class="btn-close"></button>
+            <ul class="menu">
+                <li>О компании</li>
+                <li>Услуги</li>
+                <li>Практика фирмы</li>
+                <li>Вопрос-Ответ</li>
+                <li>Новости</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
     </header>
 
     <section class="carousel">        
@@ -429,6 +440,35 @@
 
         </div>
     </section>
+
+    <div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h1 class="title">Бесплатная консультация</h1>
+                <div class="form-wrapper">
+                    <form class="consultation-form" action="">
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" class="form-control" placeholder="Алексей">
+                        </div>
+                        <div class="form-group">
+                            <label >Ваш телефон</label>
+                            <input type="tel" class="form-control" placeholder="+7">
+                        </div>
+                        <button class="btn-blue continue">Отправить</button>
+                    </form>
+                </div>
+                <span class="politics">Нажимая на кнопку, Вы соглашаетесь с <a href="">политикой конфиденциальности</a></span>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
