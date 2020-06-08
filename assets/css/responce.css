@@ -82,3 +82,214 @@
         margin-top: 35px;
     }
 }
+
+@media (max-width: 576px)
+{
+    .consultation .form-wrapper
+    {
+        width: 270px;
+    }
+
+    .navbar-brand img
+    {
+        height: 30px;
+    }
+
+    .navbar .search-form
+    {
+        display: none;
+    }
+
+    .navbar .btn-blue
+    {
+        display: none;
+    }
+
+    .menu-wrapper
+    {
+        width: 100%;
+        background-color: rgba(97, 107, 243, 0.9);
+    }
+
+    .carousel
+    {
+        margin-top: 55px;
+    }
+
+    .menu-wrapper .search-form input::placeholder
+    {
+        color: #ffffff;
+    }
+
+    .menu-wrapper .btn-blue
+    {
+        background-color: #1d1d1d;
+    }
+
+    .carousel-item-wrapper
+    {
+        height: 250px;
+    }
+
+    .border-wrapper
+    {
+        border: none;
+    }
+
+    .carousel-item-wrapper h1
+    {
+        font-size: 23px;
+    }
+
+    .carousel-item-wrapper h2
+    {
+        font-size: 15px;
+    }
+
+    .carousel-item-wrapper h3
+    {
+        font-size: 14px;
+    }
+    .border-wrapper .border-content
+    {
+        padding-bottom: 0;
+    }
+
+    .border-wrapper .border-footer
+    {
+        border: none;
+    }
+    .border-wrapper .border-header
+    {
+        border: none;
+        display: none;
+    }
+
+    .btn-blue.continue
+    {
+        padding: 10px 70px 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .btn-blue.continue:after
+    {
+        width: 50px;
+    }
+
+    .carousel-item-wrapper
+    {
+        align-items: initial;
+    }
+
+    .carousel-item-wrapper .container
+    {
+        margin-top: 20px;
+    }
+
+    .specialization-wrapper
+    {
+        justify-content: end;
+    }
+
+    .practice-images
+    {
+        order: -1;
+    }
+
+    .our-practice:after
+    {
+        content: none;
+    }
+
+    .review-header
+    {
+        display: block;
+    }
+
+    .review-item
+    {
+        padding: 15px;
+    }
+
+    .review-info
+    {
+        padding-top: 15px;
+        padding-left: 0;
+    }
+
+    .press-center-item-description-text
+    {
+        padding: 10px;
+    }
+
+    .press-center-item-description h2
+    {
+        font-size: 16px;
+    }
+
+    .press-center-item-description p
+    {
+        font-size: 14px;
+    }
+
+    .press-center-item
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .press-center-item.tag-actual:after, .press-center-item.tag-our:after
+    {
+        top: 10px;
+        left: 0px;
+    }
+
+    .press-center-item.tag-live:before
+    {
+        top: 10px;
+        right: 0;
+    }
+
+    .press-center .container
+    {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .press-center-item.tag-actual:after, .press-center-item.tag-our:after
+    {
+        padding: 5px 10px;
+    }
+
+    .press-center-item.large:hover .press-center-item-description-text
+    {
+        bottom: 65%;
+    }
+
+    .press-center-item.sm
+    {
+        width: 100%;
+    }
+
+    .about-us .col:first-child
+    {
+        border: none;
+    }
+
+    .about-us .col:nth-child(2)
+    {
+        padding-left: 0;
+    }
+
+    .footer-item.social
+    {
+        margin-top: 25px;
+    }
+
+    .modal .form-wrapper
+    {
+        width: 270px;
+    }
+}

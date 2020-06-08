@@ -23,6 +23,9 @@ function SetOwlCarousel()
         margin: 50,
         /*autoWidth: true,*/
         responsive: {
+            0: {
+                items: 2
+            },
             768: {
                 items: 3
             },
@@ -61,7 +64,7 @@ function SetOwlCarousel()
         navText:["<img src='assets/images/icons/slider-arrow.png'>","<img src='assets/images/icons/slider-arrow.png'>"],
         slideBy: 2,
         responsive: {
-            768: {
+            0: {
                 items: 1
             },
             1024: {
