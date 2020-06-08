@@ -5,3 +5,80 @@
         width: 57%;
     }
 }
+
+@media (max-width: 1000px)
+{
+    .navbar .contacts-phone
+    {
+        display: none;
+    }
+    .navbar .contacts-phone::before
+    {
+        content: none;
+    }
+    .menu-wrapper
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu-wrapper .contacts-phone a
+    {
+        display: block;
+    }
+
+    .menu-wrapper .contacts-phone
+    {
+        padding-left: 0;
+    }
+
+    .menu-wrapper .menu
+    {
+        margin-top: 25px;
+    }
+
+    .menu-wrapper .contacts-phone
+    {
+        display: block;
+    }
+
+    .practice-slider h3
+    {
+        margin-top: 20px;
+    }
+
+    .press-center-wrapper
+    {
+        display: block;
+        height: auto;
+    }
+
+    .press-center-item.big
+    {
+        width: 100%;
+    }
+
+    .press-center-item-right-side
+    {
+        width: 100%;
+    }
+
+    .about-us .blue-text
+    {
+        font-size: 25px;
+    }
+    .about-us .big-text
+    {
+        font-size: 35px;
+    }
+
+    .footer-wrapper
+    {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .copyright
+    {
+        margin-top: 35px;
+    }
+}
