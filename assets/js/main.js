@@ -21,8 +21,15 @@ function SetOwlCarousel()
     $(".our-clients .owl-carousel").owlCarousel({
         items: 6,
         margin: 50,
-        autoWidth: true
-        
+        /*autoWidth: true,*/
+        responsive: {
+            1024: {
+                items: 4
+            },
+            1200: {
+                items:6
+            }
+        }
     });
     $('.practice-slider .practice-images .owl-carousel').owlCarousel({
         items: 1,

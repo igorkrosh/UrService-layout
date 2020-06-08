@@ -1,0 +1,7 @@
+@media (max-width: 1200px)
+{
+    .our-practice:after
+    {
+        width: 57%;
+    }
+}
