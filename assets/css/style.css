@@ -140,6 +140,11 @@ input:focus, button:focus
     top: 0;
 }
 
+.menu-wrapper .btn-blue
+{
+    display: none;
+}
+
 .navbar .container
 {
     padding: 0;

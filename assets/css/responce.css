@@ -123,6 +123,7 @@
 
     .menu-wrapper .btn-blue
     {
+        display: block;
         background-color: #1d1d1d;
     }
 
