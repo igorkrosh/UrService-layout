@@ -81,6 +81,35 @@
     {
         margin-top: 35px;
     }
+
+    .contacts .container .col
+    {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .contacts
+    {
+        height: auto;
+    }
+    .contacts .ymap
+    {
+        position: initial;
+        height: 550px;
+    }
+
+    .contacts .container [class*="contacts-"]
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .contacts .container .col
+    {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 576px)
@@ -292,5 +321,22 @@
     .modal .form-wrapper
     {
         width: 270px;
+    }
+
+    .page-title-section
+    {
+        margin-top: 57px;
+    }
+
+    .contacts .container [class*="contacts-"]
+    {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .contacts .ymap
+    {
+        height: 400px;
     }
 }
