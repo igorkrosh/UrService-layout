@@ -6,7 +6,7 @@
     }
 }
 
-@media (max-width: 1000px)
+@media (max-width: 1024px)
 {
     .navbar .contacts-phone
     {
@@ -86,6 +86,16 @@
     {
         padding: 0 30px;
     }
+
+    .bankruptcy-who .row .col:first-child
+    {
+        padding-left: 10%;
+    }
+
+    .bankruptcy-who .row .col:nth-child(2)
+    {
+        padding-right: 10%;
+    }
 }
 
 @media (max-width: 768px)
@@ -109,6 +119,16 @@
     .contacts .container .col
     {
         flex-wrap: wrap;
+    }
+
+    .bankruptcy-who .row .col:first-child
+    {
+        padding-left: 5%;
+    }
+
+    .bankruptcy-who .row .col:nth-child(2)
+    {
+        padding-right: 5%;
     }
 }
 
@@ -338,5 +358,37 @@
     .contacts .ymap
     {
         height: 400px;
+    }
+
+    .page-title-section h1
+    {
+        font-size: 25px;
+    }
+
+    .page-title-section h2
+    {
+        font-size: 22px;
+    }
+
+    .page-title-section.size-large
+    {
+        min-height: 300px;
+    }
+
+    .bankruptcy-who .row .col
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .bankruptcy-who .row .col.hidden
+    {
+        flex: initial;
+        max-width: initial;
+        opacity: 1;
+        pointer-events: initial;
+        max-height: initial;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
