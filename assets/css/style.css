@@ -1168,6 +1168,8 @@ footer .border-line
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .page-title-section h1
@@ -1352,7 +1354,7 @@ footer .border-line
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bankruptcy-sect

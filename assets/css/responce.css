@@ -98,6 +98,7 @@
     }
 }
 
+
 @media (max-width: 768px)
 {
     .contacts
@@ -129,6 +130,12 @@
     .bankruptcy-who .row .col:nth-child(2)
     {
         padding-right: 5%;
+    }
+
+    .work-item
+    {
+        width: 50%;
+        padding: 25px;
     }
 }
 
@@ -390,5 +397,16 @@
         max-height: initial;
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    .corporate-sect .col:first-child
+    {
+        margin-bottom: 35px;
+    }
+
+    .corporate-sect .col
+    {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
     }
 }
