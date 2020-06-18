@@ -5,6 +5,7 @@ $(document).ready(function(){
     
     SetOwlCarousel();
     SetNavbarMenu();
+    SetBankruptcySection();
 });
 
 
@@ -86,5 +87,22 @@ function SetNavbarMenu()
     })
     $('.btn-close').on('click', function() {
         $('.menu-wrapper').removeClass('active')
+    })
+}
+
+function SetBankruptcySection()
+{
+    $('.bankruptcy-who-description-open').on('click', function () {
+        $(this.parentElement).find('.bankruptcy-who-description').addClass('active');
+        $(this.parentElement.parentElement).addClass('active');
+        $('.bankruptcy-who .col:not(".active")').addClass('hidden')
+        $(this).addClass('hidden');
+    })
+
+    $('.bankruptcy-who .btn-close').on('click', function () {
+        $(this.parentElement).find('.bankruptcy-who-description').removeClass('active');
+        $('.bankruptcy-who .col').removeClass('active');
+        $('.bankruptcy-who .col').removeClass('hidden');
+        $('.bankruptcy-who-description-open').removeClass('hidden');
     })
 }

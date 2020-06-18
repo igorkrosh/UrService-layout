@@ -16,6 +16,12 @@ input:focus, button:focus
     color: #000000;
 }
 
+.title b
+{
+    font-weight: 700;
+    color: #515be6;
+}
+
 .sub-title
 {
     font-size: 24px;
@@ -667,7 +673,7 @@ input:focus, button:focus
 
 .press-center
 {
-    padding: 90px 0;
+    padding-top: 90px;
 }
 
 .press-center .title
@@ -833,6 +839,11 @@ input:focus, button:focus
     left: 0;
     transition: all 0.5s;
     width: 100%;
+}
+
+.about-us
+{
+    margin-top: 100px;
 }
 
 .about-us .row
@@ -1166,6 +1177,15 @@ footer .border-line
     text-transform: uppercase;
 }
 
+
+.page-title-section h2
+{
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
 .page-title-section img
 {
     position: absolute;
@@ -1174,6 +1194,17 @@ footer .border-line
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.page-title-section .btn-blue
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.page-title-section.size-large
+{
+    min-height: 500px;
 }
 
 .contacts 
@@ -1256,4 +1287,224 @@ footer .border-line
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.bankruptcy-item
+{
+    width: 310px;
+    text-align: center;
+    padding: 20px;
+    
+    position: relative;
+}
+
+.bankruptcy-item:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.bankruptcy-item img
+{
+    filter: grayscale(100%); 
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.bankruptcy-item h1
+{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 25px 0 20px 0;
+}
+
+.bankruptcy-item p
+{
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.bankruptcy-item:hover img
+{
+    opacity: 1;
+    filter: none;
+}
+
+.bankruptcy-item:hover p
+{
+    opacity: 1;
+}
+
+.bankruptcy-item:hover:after
+{
+    border: 1px solid #515be6;
+}
+
+.bankruptcy-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.bankruptcy-sect
+{
+    padding-top: 90px;
+}
+
+.bankruptcy-who .row
+{
+    margin: 70px 0 70px 0;
+}
+
+.bankruptcy-who .row .col:first-child
+{
+    padding-left: 360px;
+    padding-right: 150px;
+    background: url('../images/bankruptcy/bg.jpg') no-repeat;
+    background-size: cover;    
+    
+}
+
+.bankruptcy-who .row .col:nth-child(2)
+{
+    padding-right: 360px;
+    padding-left: 150px;
+    background: url('../images/bankruptcy/bg2.jpg') no-repeat;
+    background-size: cover;    
+}
+
+.bankruptcy-who .row .col:nth-child(2) ul
+{
+    margin-top: 40px;
+}
+
+
+
+.bankruptcy-who .row .col
+{
+    padding-top: 90px;
+    padding-bottom: 120px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.bankruptcy-who .row .col.hidden
+{
+    flex: 0 0 0%;
+    max-width: 0%;
+    max-height: 0;
+    padding: 0;
+}
+
+.bankruptcy-who .row .col .container
+{
+    position: relative;
+}
+
+.bankruptcy-who .row .col .btn-close
+{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.bankruptcy-who .row .col.active .btn-close
+{
+    opacity: 1;
+    z-index: 10;
+}
+
+.bankruptcy-who .row .col.active
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bankruptcy-who-title
+{
+    font-family: PTSerif;
+    display: block;
+    font-size: 40px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.bankruptcy-who-title:after
+{
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #000000;
+    border: 2px solid #515be6;
+    left: 0;
+    top: 55%;
+    transform: translate(0%, -50%);
+}
+
+.bankruptcy-who-list-title
+{
+    font-weight: 700;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.bankruptcy-who ul
+{
+    font-family: PTSerif;
+    font-size: 18px;
+    font-weight: 300;
+    list-style-type: square;
+    color: #515be6;    
+}
+
+
+.bankruptcy-who-description
+{
+    max-height: 200px;
+    overflow: hidden;
+    transition: 0.9s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0.5)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bankruptcy-who-description.active
+{
+    max-height: 2000px;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: #ffffff;
+}
+
+.bankruptcy-who-description-open
+{
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.hidden
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bankruptcy-who-description .btn-blue
+{
+    margin-top: 25px;
 }
