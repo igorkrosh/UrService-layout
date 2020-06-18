@@ -1461,13 +1461,18 @@ footer .border-line
     margin-top: 40px;
 }
 
-.bankruptcy-who ul
+ul
 {
     font-family: PTSerif;
     font-size: 18px;
     font-weight: 300;
     list-style-type: square;
     color: #515be6;    
+}
+
+ul p 
+{
+    color: #212529;
 }
 
 
@@ -1508,4 +1513,75 @@ footer .border-line
 .bankruptcy-who-description .btn-blue
 {
     margin-top: 25px;
+}
+
+.corporate-sect
+{
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.corporate-sect .title
+{
+    margin-bottom: 70px;
+}
+
+.corporate-sect .col:first-child
+{
+    padding-right: 33px;
+}
+
+.corporate-sect .col:nth-child(2)
+{
+    padding-left: 33px;
+}
+
+.corporate-sect .col:first-child p
+{
+    margin-bottom: 45px;
+}
+
+.corporate-sect b
+{
+    text-align: left;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.work-item .count
+{
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: #515be6;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item .work-title
+{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.work-item 
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work-wrapper
+{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 150px 0;
 }
