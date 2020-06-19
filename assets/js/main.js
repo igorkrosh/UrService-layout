@@ -6,6 +6,7 @@ $(document).ready(function(){
     SetOwlCarousel();
     SetNavbarMenu();
     SetBankruptcySection();
+    SetQuestionSection();
 });
 
 
@@ -104,5 +105,25 @@ function SetBankruptcySection()
         $('.bankruptcy-who .col').removeClass('active');
         $('.bankruptcy-who .col').removeClass('hidden');
         $('.bankruptcy-who-description-open').removeClass('hidden');
+    })
+}
+
+function SetQuestionSection()
+{
+    $('.question-item .question').on('click', function () {
+        let answer = $(this.parentElement).find('.answer')[0];
+        if($(this).hasClass('active'))
+        {
+            $(this).removeClass('active')
+            $(answer).css("max-height", '')
+            
+        }
+        else
+        {
+            $(this).addClass('active')
+            let scrollHeight = answer.scrollHeight;
+            $(answer).css("max-height", scrollHeight + 'px')
+        }
+        
     })
 }
