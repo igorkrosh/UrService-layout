@@ -1587,3 +1587,117 @@ ul p
     justify-content: space-between;
     margin: 80px 0 150px 0;
 }
+
+.bankruptcy-item.sm
+{
+    width: 270px;
+}
+
+.list-opensans
+{
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+.border-text
+{
+    border: 10px solid #ffdd00;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.border-text p
+{
+    margin: 0;
+}
+
+.sect-text .text-row .col:first-child
+{
+    text-align: justify;
+}
+
+.sect-text .text-row .col:first-child p
+{
+    margin-bottom: 50px;
+}
+
+.sect-text .title
+{
+    margin-bottom: 50px;
+}
+
+.title.sm
+{
+    font-size: 20px;
+}
+
+.sect-text .title.sm
+{
+    margin-top: 30px;
+}
+
+.btn-wrapper
+{
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.fact-item b
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #515be6;
+}
+
+.fact-item p
+{
+    font-weight: 300;
+}
+
+.fact-item
+{
+    width: 285px;
+    margin-bottom: 100px;
+}
+
+.fact-row .col
+{
+    display: flex;
+}
+
+.fact-row .col:nth-child(1)
+{
+    justify-content: start;
+}
+
+.fact-row .col:nth-child(2)
+{
+    justify-content: center;
+    position: relative;
+}
+
+.fact-row .col:nth-child(3)
+{
+    justify-content: flex-end;
+}
+
+.fact-row .col:nth-child(2):after, .fact-row .col:nth-child(2):before
+{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 65px;
+    background-color: #b4b4b4;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fact-row .col:nth-child(2):after
+{
+    left: 0;
+}
+
+.fact-row .col:nth-child(2):before
+{
+    right: 0;
+}
